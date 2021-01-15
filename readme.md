@@ -64,7 +64,6 @@
   },
   courses: [
       {
-        announcement: String,
         media: String,
         ageGroup: String,
         description: String,
