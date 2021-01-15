@@ -1,11 +1,12 @@
 # Model
 
 ## Company
+```javascript
   aboutUs: String,
   owners: [
     {
       position: String,
-      bio: String
+      bio: String,
       email: String
     }
   ],
@@ -31,8 +32,10 @@
       url: String
     }
   ],
+```
 
 ## User 
+```javascript
   name: String,
   image: String,
   email: String,
@@ -46,8 +49,10 @@
       'regular'
     ]
   }
+```
 
 ## Courses
+```javascript
   category: {
     type: String,
     enum: [
@@ -77,8 +82,10 @@
   price: String,
   moreInfo: String
   termsAndConditions: String
+```
 
 ## Shows
+```javascript
   title: String,
   image: String,
   description: String,
@@ -90,23 +97,28 @@
   ],
   dateTime: String,
   location: String
+```
 
 ## Blog
+```javascript
   title: String,
   author: String,
   image: String,
   content: String
+```
 
 ## Articles
+```javascript
   title: String,
   author: String,
   image: String,
   content: String,
   url: String
+```  
 
 ## Announcements
+```javascript
   message: String,
-  url: String,
   category: {
     type: String,
     enum: [
@@ -116,5 +128,6 @@
       'blog',
       'articles
     ]
-  }
-
+  },
+  url: String,
+```
