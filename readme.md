@@ -48,10 +48,22 @@
       'author',
       'regular'
     ]
-  }
+  },
+  courses: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Course'
+    }
+  ],
+  shows: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Show'
+    }
+  ]
 ```
 
-## Courses
+## Course
 ```javascript
   category: {
     type: String,
@@ -72,7 +84,7 @@
   termsAndConditions: String
 ```
 
-## Shows
+## Show
 ```javascript
   title: String,
   image: String,
@@ -95,7 +107,7 @@
   content: String
 ```
 
-## Articles
+## Article
 ```javascript
   title: String,
   author: String,
@@ -104,7 +116,7 @@
   url: String
 ```  
 
-## Announcements
+## Announcement
 ```javascript
   message: String,
   category: {
