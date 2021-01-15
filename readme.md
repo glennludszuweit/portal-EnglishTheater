@@ -62,17 +62,6 @@
       'school workshops'
     ]
   },
-  courses: [
-      {
-        media: String,
-        ageGroup: String,
-        description: String,
-        location: String,
-        dateTime: String,
-        price: String,
-        moreInfo: String
-      }
-    ],
   media: String,
   ageGroup: String,
   description: String,
