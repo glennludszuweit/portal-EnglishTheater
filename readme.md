@@ -47,7 +47,8 @@
       'admin',
       'author',
       'regular'
-    ]
+    ],
+    default:"register"
   },
   courses: [
     {
