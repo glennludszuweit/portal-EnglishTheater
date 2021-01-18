@@ -47,8 +47,7 @@
       'admin',
       'author',
       'regular'
-    ],
-    default:"register"
+    ]
   },
   courses: [
     {
@@ -105,7 +104,8 @@
   title: String,
   author: String,
   image: String,
-  content: String
+  content: String,
+  date: Date
 ```
 
 ## Article
@@ -114,7 +114,8 @@
   author: String,
   image: String,
   content: String,
-  url: String
+  url: String,
+  date: Date
 ```  
 
 ## Announcement
