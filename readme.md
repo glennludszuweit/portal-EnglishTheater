@@ -82,6 +82,7 @@
   dateTime: String,
   price: String,
   moreInfo: String
+  googleFormUrl: String,
   termsAndConditions: String
 ```
 
