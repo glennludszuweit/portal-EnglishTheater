@@ -2,7 +2,10 @@
 
 ## Company
 ```javascript
-  aboutUs: String,
+  aboutUs: {
+    image: String,
+    text: String
+  },
   owners: [
     {
       position: String,
