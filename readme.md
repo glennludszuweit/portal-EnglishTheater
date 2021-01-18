@@ -124,6 +124,7 @@
 ## Announcement
 ```javascript
   message: String,
+  image: String,
   category: {
     type: String,
     enum: [
