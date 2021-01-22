@@ -1,6 +1,7 @@
 # Model
 
 ## Company
+
 ```javascript
   aboutUs: String,
   owners: [
@@ -34,7 +35,8 @@
   ],
 ```
 
-## User 
+## User
+
 ```javascript
   name: String,
   image: String,
@@ -44,10 +46,13 @@
   role: {
     type: String,
     enum: [
-      'admin',
-      'author',
-      'regular'
+      'super-admin', // access to all
+      'admin', //manage everything expept user
+      'author', //manage blog and articles
+      'moderator', //manage couses and show
+      'regular' // for future costumers
     ]
+    default: 'regular'
   },
   courses: [
     {
@@ -64,13 +69,14 @@
 ```
 
 ## Course
+
 ```javascript
   category: {
     type: String,
     enum: [
-      'weekly courses', 
-      'online workshops', 
-      'holiday workshops', 
+      'weekly courses',
+      'online workshops',
+      'holiday workshops',
       'school workshops'
     ]
   },
@@ -85,6 +91,7 @@
 ```
 
 ## Show
+
 ```javascript
   title: String,
   image: String,
@@ -100,6 +107,7 @@
 ```
 
 ## Blog
+
 ```javascript
   title: String,
   author: String,
@@ -108,15 +116,17 @@
 ```
 
 ## Article
+
 ```javascript
   title: String,
   author: String,
   image: String,
   content: String,
   url: String
-```  
+```
 
 ## Announcement
+
 ```javascript
   message: String,
   category: {
