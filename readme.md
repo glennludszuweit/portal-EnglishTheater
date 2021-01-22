@@ -3,7 +3,10 @@
 ## Company
 
 ```javascript
-  aboutUs: String,
+  aboutUs: {
+    image: String,
+    text: String
+  },
   owners: [
     {
       position: String,
@@ -46,6 +49,7 @@
   role: {
     type: String,
     enum: [
+<<<<<<< HEAD
       'super-admin', // access to all
       'admin', //manage everything expept user
       'author', //manage blog and articles
@@ -53,6 +57,13 @@
       'regular' // for future costumers
     ]
     default: 'regular'
+=======
+      'admin',
+      'author',
+      'regular'
+    ],
+    default:"register"
+>>>>>>> 0f3f12deed9386009f48dbc36013ac8983248bcd
   },
   courses: [
     {
@@ -87,6 +98,7 @@
   dateTime: String,
   price: String,
   moreInfo: String
+  googleFormUrl: String,
   termsAndConditions: String
 ```
 
@@ -129,6 +141,7 @@
 
 ```javascript
   message: String,
+  image: String,
   category: {
     type: String,
     enum: [
